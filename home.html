@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Capture phase</h1>
+    <div id="one"> 1
+        <div id="two"> 2
+            <div id="three"> 3
+                <div id="four"> 4
+    </div>
+</div>
+</div>
+</div>
+    <script>
+        //Bubbling Phase
+        document.getElementById("one").addEventListener("click", function(){
+            console.log("1");}, true);
+            document.getElementById("two").addEventListener("click", function(){
+            console.log("2");}, true);
+            document.getElementById("three").addEventListener("click", function(){
+            console.log("3");}, true);
+            document.getElementById("four").addEventListener("click", function(){
+            console.log("4");}, true);
+    </script>
+</body>
+</html>
